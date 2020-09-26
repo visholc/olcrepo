@@ -7,16 +7,25 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EmployeeService } from './service/employee.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ListEmployeeComponent } from './employee/list-employee/list-employee.component';
+import { EditEmployeeComponent } from './employee/edit-employee/edit-employee.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddEmployeeComponent } from './employee/add-employee/add-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ListEmployeeComponent,
+    EditEmployeeComponent,
+    AddEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [
