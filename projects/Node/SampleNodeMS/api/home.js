@@ -4,8 +4,8 @@ var app = require('../app');
 app.get('/', (req, res) => {
 
   var json ={
-    "name" : "NeerSevaAdminMS",
-    "cluster_name" : "ns_vstiwary",
+    "name" : "OLCSampleService",
+    "cluster_name" : "olc_vish",
     "cluster_uuid" : "Cdw5mOseQsiCyHZtDxmF8Q",
     "version" : {
       "number" : "6.8.0",
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
       "minimum_wire_compatibility_version" : "5.6.0",
       "minimum_index_compatibility_version" : "5.0.0"
     },
-    "tagline" : "NeerSeva, Pay for Quality and Service. The Best Water Delevery Solution!"
+    "tagline" : "OLC, The Best way to learn App Development!"
   };
   
     res.json(json);

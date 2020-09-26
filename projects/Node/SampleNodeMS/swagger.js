@@ -11,8 +11,8 @@ const port = process.env.PORT || 3000;
 const swaggerOptions = {
   swaggerDefinition: {
     info: {
-      title: "Customer API",
-      description: "Customer API Information",
+      title: "Employee API",
+      description: "Employee API Information",
       contact: {
         name: "Amazing Developer",
       },
@@ -30,26 +30,26 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 // Routes
 /**
  * @swagger
- * /customers:
+ * /Employees:
  *  get:
- *    description: Use to request all customers
+ *    description: Use to request all Employees
  *    responses:
  *      '200':
  *        description: A successful response
  */
-app.get("/customers", (req, res) => {
-  res.status(200).send("Customer results");
+app.get("/employee", (req, res) => {
+  res.status(200).send("Employee results");
 });
 
 /**
  * @swagger
- * /customers:
+ * /Employees:
  *    put:
- *      description: Use to return all customers
+ *      description: Use to return all Employees
  *    parameters:
- *      - name: customer
+ *      - name: Employee
  *        in: query
- *        description: Name of our customer
+ *        description: Name of our Employee
  *        required: false
  *        schema:
  *          type: string
@@ -58,8 +58,8 @@ app.get("/customers", (req, res) => {
  *      '201':
  *        description: Successfully created user
  */
-app.put("/customer", (req, res) => {
-  res.status(201).send("Successfully updated customer");
+app.put("/employee", (req, res) => {
+  res.status(201).send("Successfully updated Employee");
 });
 
 app.listen(port, () => {
