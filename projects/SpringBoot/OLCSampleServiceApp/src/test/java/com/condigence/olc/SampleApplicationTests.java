@@ -7,7 +7,7 @@
 //
 //@RunWith(SpringRunner.class)
 //@SpringBootTest
-//public class SpringBootImageUploadApplicationTests {
+//public class SampleApplicationTests {
 //
 //	@Test
 //	public void contextLoads() {
