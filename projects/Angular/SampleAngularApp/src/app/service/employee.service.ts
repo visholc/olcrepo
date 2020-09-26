@@ -12,8 +12,10 @@ export class EmployeeService {
 
   constructor(private http: HttpClient) { }
 
-  private baseUrl = "http://localhost:8099/olc/api";
 
+ // private baseUrl = "http://localhost:8099";
+
+  private baseUrl = "http://localhost:3000";
 
   
   getAllEmployee() {
