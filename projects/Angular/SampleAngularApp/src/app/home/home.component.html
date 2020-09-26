@@ -1,0 +1,22 @@
+<p>Home works!</p>
+<table id="emp" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="
+          let employee of employees;
+        ">
+        <td>{{ employee.id || "N/A" }}</td>
+       
+        <td>{{ employee.name || "N/A" }}</td>
+        <td>{{ employee.age || "N/A" }}</td>
+       
+        
+      </tr>
+    </tbody>
+  </table>
