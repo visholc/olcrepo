@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 public class HomeController {
 
+	
+	// satish //
 	@GetMapping("/")
 	public ResponseEntity<?> home() {
 		String name = "App is Running!";
