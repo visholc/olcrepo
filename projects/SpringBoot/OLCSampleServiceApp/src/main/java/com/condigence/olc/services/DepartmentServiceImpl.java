@@ -108,7 +108,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 	public void deleteDapertment(long id) {
 
 		
-			repository.deleteById(id);
+	repository.deleteById(id);
 
 		
 
