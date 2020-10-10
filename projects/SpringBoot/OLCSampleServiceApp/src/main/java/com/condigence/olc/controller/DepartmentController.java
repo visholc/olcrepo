@@ -25,6 +25,8 @@ import com.condigence.olc.services.DepartmentService;
 @RestController
 public class DepartmentController {
 
+
+	
 	@Autowired
 	DepartmentService service;
 
